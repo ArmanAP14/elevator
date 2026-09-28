@@ -14,36 +14,36 @@
 پروژه به شکل ماژولار و بر اساس مسئولیت‌ها به بسته‌های زیر تقسیم شده است:
 
 src/
-├── Simulation.java                 # نقطه شروع و اجرای شبیه‌سازی (Main Entry Point)
+├── Simulation.java                  
 ├── controller/
-│   └── ElevatorController.java     # کنترل‌گر و زمان‌بند مرکزی آسانسورها برای پاسخ به درخواست‌ها
+│   └── ElevatorController.java     
 ├── model/
-│   ├── Elevator.java               # کلاس انتزاعی/پایه آسانسور (موقعیت، ظرفیت، جهت، وضعیت حرکت)
-│   ├── ElevatorType.java           # انواع آسانسور (PUBLIC, FREIGHT, VIP)
-│   ├── PublicElevator.java         # آسانسور عمومی برای تردد دانشجویان و کارکنان عادی
-│   ├── FreightElevator.java        # آسانسور باربری برای جابجایی بار و وسایل سنگین
-│   └── VipElevator.java            # آسانسور ویژه مختص اساتید و مسئولین
+│   ├── Elevator.java               
+│   ├── ElevatorType.java           
+│   ├── PublicElevator.java         
+│   ├── FreightElevator.java        
+│   └── VipElevator.java            
 ├── passenger/
-│   ├── Passenger.java              # کلاس انتزاعی مسافر (مبدأ، مقصد، زمان انتظار، وزن/بار)
-│   ├── PassengerRole.java          # نقش‌ها و عناوین مسافران
-│   ├── Undergraduate.java          # دانشجوی کارشناسی
-│   ├── Professor.java              # استاد دانشگاه
-│   ├── ViceDean.java               # معاون/مسئول ارشد (دسترسی VIP و بالاترین اولویت)
-│   ├── Repairman.java              # تعمیرکار ساختمان
-│   └── Porter.java                 # باربر و حمل‌کننده تجهیزات
+│   ├── Passenger.java              
+│   ├── PassengerRole.java          
+│   ├── Undergraduate.java          
+│   ├── Professor.java              
+│   ├── ViceDean.java               
+│   ├── Repairman.java              
+│   └── Porter.java                 
 ├── floor/
-│   ├── Floor.java                  # مدل هر طبقه و نگهداری وضعیت فیزیکی آن
-│   ├── FloorManager.java           # مدیریت کلیه طبقات و رویدادهای مربوط به آنها
-│   └── ElevatorQueue.java          # صف مسافران منتظر در هر طبقه برای سوار شدن
+│   ├── Floor.java                  
+│   ├── FloorManager.java           
+│   └── ElevatorQueue.java          
 ├── fairness/
-│   ├── FairnessStrategy.java       # استراتژی رعایت عدالت و اولویت‌بندی در تخصیص سرویس
-│   └── PassengerComparator.java    # مقایسه‌گر مسافران بر اساس اولویت، نقش و زمان انتظار
+│   ├── FairnessStrategy.java       
+│   └── PassengerComparator.java    
 ├── task/
-│   ├── Task.java                   # تسک‌ها و درخواست‌های جابجایی بین طبقات
-│   └── Priority.java               # سطوح اولویت درخواست‌ها (HIGH, MEDIUM, LOW و ...)
+│   ├── Task.java                   
+│   └── Priority.java               
 └── util/
-    ├── PassengerFactory.java       # الگوی کارخانه (Factory) جهت تولید خودکار و تصادفی مسافران
-    └── Logger.java                 # ثبت وقایع و گزارش لاگ‌های سیستم حین اجرای شبیه‌سازی
+    ├── PassengerFactory.java     
+    └── Logger.java                 
 
 ---
 
